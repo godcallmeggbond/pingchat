@@ -13,6 +13,7 @@
 </head>
 <body class="bg-gray-50">
 
+
     <header class="bg-white shadow-sm py-4 px-6">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
@@ -27,9 +28,13 @@
             <div class="flex items-center gap-4">
                 <i class="fas fa-sun text-gray-600 cursor-pointer"></i>
                 <button class="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition open-modal">Connect</button>
+                <a href="https://x.com/pingchatxyz" target="_blank" rel="noopener noreferrer" class="text-blue-custom hover:text-blue-700">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
             </div>
         </div>
     </header>
+
 
     <main class="max-w-6xl mx-auto py-12 px-6">
         <div class="text-center mb-10">
@@ -38,6 +43,7 @@
                 Posting costs $PINGCHAT tokens - the more popular the page, the more expensive to post!
             </p>
         </div>
+
 
         <div class="flex justify-center mb-12">
             <div class="relative w-full max-w-lg">
@@ -48,6 +54,7 @@
                 </button>
             </div>
         </div>
+
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Top Pages -->
@@ -116,12 +123,14 @@
         </div>
     </main>
 
+
     <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center hidden z-50">
         <div class="bg-white rounded-lg p-6 max-w-sm w-full shadow-lg">
-            <p class="text-center text-gray-800 text-lg mb-4"> Please buy $PINGCHAT first </p>
+            <p class="text-center text-gray-800 text-lg mb-4"> Please wait for $pingchat to be listed on c402.markets and try again </p>
             <button id="closeModal" class="block mx-auto bg-blue-custom text-white px-6 py-2 rounded hover:bg-blue-900 transition">close</button>
         </div>
     </div>
+
 
     <script>
         document.querySelectorAll('.open-modal').forEach(button => {
